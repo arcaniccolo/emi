@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutz – EMI Reifenhandel</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --red:        #D90012;
+      --black:      #080808;
+      --dark:       #101010;
+      --dark-2:     #161616;
+      --border:     rgba(255,255,255,0.07);
+      --gray:       #555;
+      --gray-mid:   #888;
+      --gray-light: #bbb;
+      --white:      #FFFFFF;
+      --font-head:  'Oswald', sans-serif;
+      --font-body:  'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: var(--red); }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+    nav {
+      background: rgba(8,8,8,0.96);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner { display: flex; align-items: center; gap: 24px; }
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .85rem;
+      color: var(--gray-light);
+      transition: color .2s;
+    }
+    .nav-back:hover { color: #fff; text-decoration: none; }
+    .nav-back i { font-size: .75rem; color: var(--red); }
+    .nav-title {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      letter-spacing: .05em;
+      color: var(--white);
+    }
+
+    main { padding: 72px 0 100px; }
+
+    .page-header { margin-bottom: 56px; }
+    .page-header .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+    .page-header .eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: var(--red);
+    }
+    .page-header h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 600;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .page-header p {
+      margin-top: 12px;
+      color: var(--gray-mid);
+      font-size: .9rem;
+    }
+
+    .legal-section { margin-bottom: 48px; }
+    .legal-section h2 {
+      font-family: var(--font-head);
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-section h3 {
+      font-family: var(--font-head);
+      font-size: .95rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    .legal-section p {
+      color: var(--gray-light);
+      font-size: .9rem;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .legal-section ul.bullet {
+      list-style: disc;
+      padding-left: 22px;
+      color: var(--gray-light);
+      font-size: .9rem;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .legal-section ul.bullet li { margin-bottom: 6px; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      margin-top: 40px;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: .78rem;
+      color: var(--gray-mid);
+    }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: var(--red); }
+    .footer-links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-back">
+        <i class="fas fa-arrow-left"></i>
+        Zurück zur Website
+      </a>
+      <span class="nav-title">EMI Reifenhandel</span>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <div class="page-header">
+      <div class="eyebrow">Rechtliches</div>
+      <h1>Datenschutzerklärung</h1>
+      <p>Informationen gemäß DSGVO (Datenschutz-Grundverordnung)</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlicher im Sinne der DSGVO ist:<br /><br />
+        <strong>Emmanuel Lavdim Krasniqi</strong><br />
+        EMI Reifenhandel<br />
+        Elbestraße 20, 35260 Stadtallendorf<br />
+        Telefon: <a href="tel:+4915231944739">015231 944739</a><br />
+        E-Mail: <a href="mailto:emi-reifen2026@web.de">emi-reifen2026@web.de</a>
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>2. Allgemeines zur Datenverarbeitung</h2>
+      <p>
+        Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten erfolgt nur nach Einwilligung des Nutzers oder wenn die Verarbeitung durch gesetzliche Vorschriften gestattet ist.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>3. Bereitstellung der Website & Server-Logfiles</h2>
+      <p>
+        Bei jedem Aufruf unserer Website erfasst unser Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles, die Ihr Browser automatisch übermittelt. Dies sind:
+      </p>
+      <ul class="bullet">
+        <li>Browsertyp und Browserversion</li>
+        <li>verwendetes Betriebssystem</li>
+        <li>Referrer URL (zuvor besuchte Seite)</li>
+        <li>Hostname des zugreifenden Rechners</li>
+        <li>Uhrzeit der Serveranfrage</li>
+        <li>IP-Adresse (anonymisiert)</li>
+      </ul>
+      <p>
+        Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website).
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>4. Kontaktformular & Anfragen</h2>
+      <h3>Kontaktformular (Altreifen-Entsorgung)</h3>
+      <p>
+        Wenn Sie uns über unser Kontaktformular eine Anfrage zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+      </p>
+      <p>
+        Verarbeitete Daten: Name, Firma, E-Mail-Adresse, Telefonnummer, Reifenmenge, Nachricht.<br />
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+      </p>
+      <h3>E-Mail-Kontakt</h3>
+      <p>
+        Wenn Sie uns per E-Mail kontaktieren, werden Ihre übermittelten Daten einschließlich der Kontaktdaten zum Zweck der Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>5. WhatsApp-Kommunikation</h2>
+      <p>
+        Wir bieten die Möglichkeit, uns über WhatsApp zu kontaktieren. Anbieter ist die WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
+      </p>
+      <p>
+        Wenn Sie uns über WhatsApp kontaktieren, werden Ihre übermittelten Nachrichten und Kontaktdaten von WhatsApp verarbeitet. Bitte beachten Sie die Datenschutzerklärung von WhatsApp: <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener">https://www.whatsapp.com/legal/privacy-policy-eea</a>
+      </p>
+      <p>
+        Rechtsgrundlage für unsere Verarbeitung Ihrer Anfrage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer schnellen Kundenkommunikation).
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>6. Google Maps</h2>
+      <p>
+        Diese Website nutzt Google Maps zur Darstellung interaktiver Karten. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+      </p>
+      <p>
+        Zur Nutzung von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Google Maps wird im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns angegebenen Orte eingesetzt.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>7. Ihre Rechte</h2>
+      <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+      <ul class="bullet">
+        <li><strong>Auskunftsrecht</strong> (Art. 15 DSGVO)</li>
+        <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
+        <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
+        <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+        <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+        <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
+      </ul>
+      <p>
+        Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Zuständige Aufsichtsbehörde in Hessen ist der <strong>Hessische Beauftragte für Datenschutz und Informationsfreiheit</strong>, Gustav-Stresemann-Ring 1, 65189 Wiesbaden.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>8. Datensicherheit</h2>
+      <p>
+        Wir sichern unsere Website und sonstige Systeme durch technische und organisatorische Maßnahmen gegen Verlust, Zerstörung, Zugriff, Veränderung oder Verbreitung Ihrer Daten durch unbefugte Personen. Trotz regelmäßiger Kontrollen ist ein vollständiger Schutz gegen alle Gefahren jedoch nicht möglich.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>9. Aktualität & Änderungen</h2>
+      <p>
+        Diese Datenschutzerklärung hat den Stand Mai 2024. Durch die Weiterentwicklung unserer Website oder aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern.
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2024 EMI Reifenhandel · Emmanuel Lavdim Krasniqi · Stadtallendorf</span>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
